@@ -36,9 +36,10 @@ body {
 
 .game-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .game-board {
@@ -49,11 +50,18 @@ body {
 
 #board {
     display: block;
+    width: 300px !important;
+    height: 600px !important;
+    max-width: 300px;
+    max-height: 600px;
 }
 
 .game-info {
     display: flex;
     flex-direction: column;
+    width: 200px;
+    position: sticky;
+    top: 20px;
     gap: 15px;
     min-width: 200px;
 }
